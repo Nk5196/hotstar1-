@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        #query{
+            width: 100%;
+           
+        }
+        #movies{
+            /* border: 1px solid rgb(0, 255, 30); */
+            margin-top: 10px;
+            height: 200px;
+            width: 28%;
+            overflow: scroll;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        #display{
+            /* border: 1px solid red; */
+            width: 70%;
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            
+        }
+        body{
+            padding: 20px
+        }
+       .poster{
+           width: 200px;
+       }
+       #logo{
+           width: 300px;
+       }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>Hotstar</h1> -->
+    <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Disney%2B_Hotstar_logo.svg/800px-Disney%2B_Hotstar_logo.svg.png?20220114145451">
+    <input oninput="searchMovies()" type="text" id="query" />
+    <div id="container" class=".container">
+    <div id="movies" class="shadow p-3 mb-5 bg-white rounded"></div>
+    <div id="display" class="shadow p-3 mb-5 bg-white rounded"></div>
+</div>
+</body>
+</html>
+
+<script src="/index.js">
+
+</script>
